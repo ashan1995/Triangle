@@ -285,8 +285,8 @@ int main()
         // Draw our first triangle
         ourShader.use();
         
-
-        ourShader.setVec3("light.position", lightPos.x,lightPos.y,lightPos.z);
+        ourShader.setVec3("light.direction", -0.2f, -1.0f, -0.3f);
+       // ourShader.setVec3("light.position", lightPos.x,lightPos.y,lightPos.z);
         ourShader.setVec3("viewPos", cameraPos.x,cameraPos.y,cameraPos.z);
 
         // light properties
